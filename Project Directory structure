@@ -1,0 +1,29 @@
+├── .env.example
+├── .gitignore
+├── index.html
+├── metadata.json
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── server.ts                  # Express server + Vite middlewares + Gemini API endpoints
+├── src/
+│   ├── main.tsx              # React entry point
+│   ├── App.tsx               # Root application state & tab orchestration
+│   ├── index.css             # Tailwind CSS & custom culinary typography
+│   ├── types/
+│   │   └── recipe.ts         # TypeScript interfaces for recipes, meal plans, preferences
+│   ├── services/
+│   │   ├── api.ts            # Client-side API client for Express endpoints
+│   │   └── sound.ts          # Web Audio synthesizer for timer bell & speech synthesis
+│   ├── data/
+│   │   └── culinaryData.ts   # Pantry categories, Indian & Continental presets, cuisines
+│   └── components/
+│       ├── Header.tsx            # Navigation banner with tabs & badges
+│       ├── IngredientInput.tsx   # Ingredient chips, category drawers & text parser
+│       ├── PreferencesPanel.tsx  # Cuisine selector, spice level, diet filters, time slider
+│       ├── RecipeCard.tsx        # Recipe card with macro bars & action triggers
+│       ├── RecipeDetailModal.tsx # Servings scaler, substitutions, printable sheet
+│       ├── CookMode.tsx          # Fullscreen hands-free cook view with timers & TTS
+│       ├── MealPlannerView.tsx   # 7-day schedule & consolidated grocery list
+│       ├── CalorieTrendChart.tsx # Recharts calorie trend line & stacked meal breakdown
+│       └── CuisineShowcase.tsx   # Deep dive into Continental & Indian cooking
